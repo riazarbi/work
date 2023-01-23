@@ -1,0 +1,11 @@
+.Rproj.user/*
+.Rhistory
+.RData
+.Ruserdata
+task_logging/*
+.cache/*
+.config/*
+.ipython/*
+.jupyter/*
+.local/*
+R

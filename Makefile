@@ -28,6 +28,11 @@ get-data: ## Copy in work and payments csv from icloud
 test: build build-debug ## Run tests
 	$(docker_run) R -e 'print("Image Runs")'
 
+.PHONY: clean
+clean: ## Remove build files
+	rm -rf .cache .config .ipython .jupyter .local .Rhistory .Rproj.user R
+
+
 .PHONY: debug
 debug: build-debug ## Launch an interactive environment
 	$(debug_run) jupyter notebook --NotebookApp.default_url=/lab/ --no-browser --ip=0.0.0.0 --port=8888
