@@ -9,3 +9,4 @@ task_logging/*
 .jupyter/*
 .local/*
 R
+.Rproj.user
