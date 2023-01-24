@@ -1,0 +1,57 @@
+Timestamp;Category;Status;Duration;Project;Description;Rate
+17 Jun 2022 at 11:42;work;start;60;Project A;Director meeting; 2000
+29 Jun 2022 at 10:55;work;start;60;Project A;Director meeting; 2000
+30 Jun 2022 at 10:51;work;start;60;Project A;363 SINAID and closing down Finco; 500 
+04 Jul 2022 at 12:00;work;start;60;Project A; Changing postboxes; 1100
+18 Jul 2022 at 11:04;work;start;60;Project A; ; 500
+18 Jul 2022 at 12:05;work;start;60;Project A; Fixing google account settings before cutoff on 1 Aug; 1100
+19 Jul 2022 at 10:16;work;start;60;Project A; migrate email addresses to smith data admin account; 1100
+19 Jul 2022 at 11:16;work;start;60;Project A; Migrating users to smithdata; 1100
+19 Jul 2022 at 12:17;work;start;60;Project A; Migrating accounts to smith data; 1100 
+19 Jul 2022 at 13:17;work;start;60;Project A; Migrate users to smithdata; 1100
+20 Jul 2022 at 10:17;work;start;60;Project A ; Create BSE share sale sheet ; 1100
+20 Jul 2022 at 11:19;work;start;60;Project A; Coordinating SURB de registration for Finco; 500
+20 Jul 2022 at 13:33;work;start;30;Green Insight; Initial informal engagement; 0
+20 Jul 2022 at 19:44;work;start;60;Project A; Email migration smithdata; 1100
+20 Jul 2022 at 19:47;work;start;60;Project A; Migrate email to smithdata; 1100
+20 Jul 2022 at 20:52;work;start;60;Project A; Migrating emails addresses to smithdata; 1100
+21 Jul 2022 at 11:56;work;start;60;Green Insight; Stakeholder Engagement - James Madison; 0 
+21 Jul 2022 at 12:58;work;start;60;Green Insight; Building out a valuation model spreadsheet; 0
+21 Jul 2022 at 13:58;work;start;60;Green Insight; Building out a valuation spreadsheet; 0
+21 Jul 2022 at 17:49;work;start;60;Blog; Random daily lusaka imagery wallpaper ; 0
+22 Jul 2022 at 10:22;work;start;60;Blog; Download Hi-Rez imagery from the city of lusaka; 0
+22 Jul 2022 at 18:43;work;start;60;Project A; Migrating emails to the new account; 0
+25 Jul 2022 at 11:03;work;start;60;Project A; Coordinating meetings and sending Mompati documents for Finco SURB deregistration; 1100
+29 Jul 2022 at 10:34;work;start;60;Project A; Director final meeting; 2000
+29 Jul 2022 at 11:34;work;start;60;Project A; Director final meeting; 2000
+01 Aug 2022 at 10:52;work;start;60;Overhead; Barclays Bank statements and closing account; 0
+01 Aug 2022 at 11:52;work;start;60;Diffdfs; Building packagr; 0
+01 Aug 2022 at 12:53;work;start;60;Overhead; Fixing broken R docker builds; 0
+03 Aug 2022 at 15:50;work;start;60;Dataversionr; Writing functions; 0
+03 Aug 2022 at 16:50;work;start;60;Dataversionr; Writing functions; 0
+03 Aug 2022 at 17:50;work;start;60;Dataversionr; Writing functions; 0
+18 Aug 2022 at 10:06;work;start;60;Dataversionr; Migrating ALPHAVANTAGE code to dataversionr; 0
+18 Aug 2022 at 11:08;work;start;60;Project A; KYC for AON and broker; 1100
+18 Aug 2022 at 12:09;work;start;60;Project A; KYC - searching for files and scanning them; 1100
+18 Aug 2022 at 13:25;work;start;60;Project A; KYC; 1100
+18 Aug 2022 at 14:26;work;start;60;Project A; KYC - chasing down documents; 1100
+23 Aug 2022 at 11:09;work;start;60;Devops; Setting up kubernetes pv zfs datasets in prep for deploying k3s; 0
+25 Aug 2022 at 15:40;work;start;60;Project A; KYC - compiling documents; 1100
+26 Aug 2022 at 15:40;work;start;60;Project A; KYC - compiling documents (broker); 1100
+01 Sep 2022 at 07:33;work;start;360;Devops; Network Setup. Laying cables, installing and configuring switches and routers ; 0
+01 Sep 2022 at 07:35;work;start;360;Devops;Server provisioning. Install Ubuntu, configure static ip, configure WireGuard, zfs, docker, basic kubernetes, ufw, and automate; 0
+01 Sep 2022 at 07:36;work;start;240;Devops; Kubernetes configuration. Set up traefik ingress, learn and set up argo, configure nfs controller, configure minio ; 0
+05 Sep 2022 at 16:25;work;start;60;Kubernetes ; Deploy quant dev; 0
+05 Sep 2022 at 17:25;work;start;60;Kubernetes ; Deploy jupyter; 0
+12 Sep 2022 at 07:59;work;start;60;Quant; Argo data dag; 0
+12 Sep 2022 at 08:59;work;start;60;Quant; Argo cron; 0
+08 Nov 2022 at 09:32;work;start;60;Project A; Calling RMS Project A and getting them to unlock profile; 1100
+08 Nov 2022 at 10:41;work;start;60;Project A; Renew Project A Post; 1100
+10 Nov 2022 at 10:05;work;start;60;Project A; Coordinating deregistering Finco; 1100
+25 Nov 2022 at 14:15;work;start;120;Project A; Document prep for closing Finco and Post Box KYC; 1100
+29 Nov 2022 at 10:16;work;start;120;Project A; Closing Finco, renewing post box, collecting post; 1100
+29 Nov 2022 at 12:16;work;start;60;Project A; Closing Finco, renewing post box, collecting post; 2000
+17 Jan 2023 at 10:39;work;start;60;Project A; Reestablishing online banking and paying bills; 2000
+19 Jan 2023 at 09:31;work;start;60;Project A; Courier post box access card to BMR and reimburse self; 500
+23 Jan 2023 at 21:56;work;start;600;MakeR; Setting up docker + make + binder workflow; 0
+24 Jan 2023 at 09:06;work;start;60;Project A; Deal with frozen RMS account; 2500

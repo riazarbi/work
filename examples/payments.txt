@@ -1,0 +1,2 @@
+Record Date;Received Date;Category;Project;Amount;Account
+24 Jan 2023 at 09:29;24 Jan 2023 at 09:28;work;Project A;30000;Bank Account 1
