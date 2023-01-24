@@ -6,6 +6,9 @@ LABEL authors="Riaz Arbi"
 ARG DEBIAN_FRONTEND=noninteractive
 
 USER root
+# Ensure correct place for saving R packages
+ENV R_LIBS_SITE=/usr/local/lib/R/site-library
+ENV R_LIBS_USER=/usr/local/lib/R/site-library
 
 WORKDIR /
 # Install system dependencies
@@ -20,8 +23,7 @@ RUN echo "Checking for 'apt.txt'..." \
         && rm -rf /tmp/* \
         ; fi
 
-RUN echo $R_LIBS_USER
-RUN echo $R_LIBS_SITE
+
 
 # Install R dependencies
 COPY install.R .

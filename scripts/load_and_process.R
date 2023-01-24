@@ -1,9 +1,13 @@
-library(readr)
-library(dplyr)
-library(lubridate)
-library(tidyr)
-library(stringr)
-library(snakecase)
+suppressPackageStartupMessages({
+  library(readr)
+  library(dplyr)
+  library(lubridate)
+  library(tidyr)
+  library(stringr)
+  library(snakecase)
+})
+
+message("Loading logs...\n")
 
 work_log <- ifelse(file.exists("task_logging/work.txt"), 
                "task_logging/work.txt", 
@@ -13,8 +17,11 @@ payments_log <- ifelse(file.exists("task_logging/payments.txt"),
                    "task_logging/payments.txt", 
                    "examples/payments.txt")
 
-work <- read_delim(work_log, delim=";")
-payments <- read_delim(payments_log, delim=";")
+work <- read_delim(work_log, delim=";", show_col_types = FALSE)
+payments <- read_delim(payments_log, delim=";", show_col_types = FALSE)
+
+
+message("\nProcessing work log...\n")
 
 work |> 
   mutate(across(everything(), str_trim)) |>
@@ -26,7 +33,9 @@ work |>
   mutate(Amount = Rate * Hours) |>
   group_by(Project) |>
   summarise(Hours = sum(Hours),
-            Total = sum(Amount))
+            Total = sum(Amount)) |> print()
+
+message("\nProcessing payments log...\n")
 
 payments |> 
   mutate(across(everything(), str_trim)) |>
@@ -36,4 +45,6 @@ payments |>
          `Record Date` = as_datetime(`Record Date`),
          `Received Date` = as_datetime(`Received Date`)) |>
   group_by(Project) |>
-  summarise(Amount = sum(Amount))
+  summarise(Amount = sum(Amount)) |> print()
+
+message("\nEXITING\n")

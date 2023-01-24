@@ -1,9 +1,10 @@
 build_image := riazarbi/work:20230124
 build_source := riazarbi/maker:20230124
+
 debug_image := riazarbi/work_debug:20230124
 debug_source := riazarbi/maker_binder:20230124
 
-build_run := docker run --rm --mount type=bind,source="$(shell pwd)/",target=/root $(build_image)
+build_run := docker run --rm --mount type=bind,source="$(shell pwd)/",target=/home/maker $(build_image)
 debug_run := docker run --rm -p 8888:8888 --mount type=bind,source="$(shell pwd)/",target=/home/maker $(debug_image)
 
 .DEFAULT_GOAL := help
@@ -17,21 +18,24 @@ build: ## Build docker container with required dependencies and data
 	docker build -t $(build_image) --no-cache --build-arg FROMIMG=$(build_source) .
 
 .PHONY: build-debug
-build-debug: ## Build docker container with required dependencies
+build-debug: ## Build docker debug container with required dependencies
 	docker build -t $(debug_image) --no-cache --build-arg FROMIMG=$(debug_source) .
 
 .PHONY: get-data
-get-data: ## Copy in work and payments csv from icloud
+get-data: ## Copy in work and payments files from remote location
 	cp -r /data/icloud/task_logging ./
 
+.PHONY: run
+run: ## Process the files
+	$(build_run) /bin/bash run.sh
+
 .PHONY: test
-test: build build-debug ## Run tests
-	$(docker_run) R -e 'print("Image Runs")'
+test: ## Run tests
+	$(build_run) R -e 'print("Image Runs")'
 
 .PHONY: clean
 clean: ## Remove build files
-	rm -rf .cache .config .ipython .jupyter .local .Rhistory .Rproj.user R
-
+	rm -rf .cache .config .ipython .jupyter .local .Rhistory .Rproj.user R task_logging
 
 .PHONY: debug
 debug: build-debug ## Launch an interactive environment
